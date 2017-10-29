@@ -147,6 +147,6 @@
     <junit.version>4.12</junit.version>
     <querydsl.version>4.1.4</querydsl.version>
     <spring.version>4.3.11.RELEASE</spring.version>
-    <spring.data.jpa.version>1.11.7.RELEASE</spring.data.jpa.version>
+    <spring.data.jpa.version>1.11.8.RELEASE</spring.data.jpa.version>
   </properties>
 </project>
