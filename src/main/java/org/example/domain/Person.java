@@ -11,23 +11,46 @@ import javax.persistence.Table;
 @Table(name = "person")
 public class Person extends Model
 {
-  @Column(length = 100, name = "name", nullable = false)
-  private String name;
+  @Column(length = 100, name = "first_name", nullable = false)
+  private String firstName;
+
+  @Column(length = 100, name = "last_name", nullable = false)
+  private String lastName;
+
+  @Column(length = 100, name = "middle_name")
+  private String middleName;
 
   Person()
   {
     super();
   }
 
-  public Person(final String name)
+  public Person(final String firstName, final String lastName)
+  {
+    this(firstName, null, lastName);
+  }
+
+  public Person(final String firstName, final String middleName, final String lastName)
   {
     this();
 
-    this.name = name;
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.middleName = middleName;
   }
 
-  public String getName()
+  public String getFirstName()
   {
-    return name;
+    return firstName;
+  }
+
+  public String getLastName()
+  {
+    return lastName;
+  }
+
+  public String getMiddleName()
+  {
+    return middleName;
   }
 }

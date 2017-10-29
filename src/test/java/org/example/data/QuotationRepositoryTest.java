@@ -37,7 +37,7 @@ public class QuotationRepositoryTest
   @Before
   public void setup()
   {
-    final Person person = personRepository.saveAndFlush(new Person("John Smith"));
+    final Person person = personRepository.saveAndFlush(new Person("John", "Smith"));
 
     final Company customer = companyRepository.saveAndFlush(new Company("Customer"));
 
